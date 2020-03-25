@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="55696" started-at="2020-03-25T17:37:42 IST" finished-at="2020-03-25T17:38:37 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="55696" started-at="2020-03-25T17:37:42 IST" finished-at="2020-03-25T17:38:37 IST">
+      <class name="demo.link_log">
+        <test-method status="PASS" signature="enterURL()[pri:0, instance:demo.link_log@528931cf]" name="enterURL" duration-ms="11556" started-at="2020-03-25T17:37:42 IST" finished-at="2020-03-25T17:37:53 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterURL -->
+        <test-method status="PASS" signature="contactus()[pri:1, instance:demo.link_log@528931cf]" name="contactus" duration-ms="2804" started-at="2020-03-25T17:37:53 IST" finished-at="2020-03-25T17:37:56 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- contactus -->
+        <test-method status="PASS" signature="geeksURL()[pri:2, instance:demo.link_log@528931cf]" name="geeksURL" duration-ms="18645" started-at="2020-03-25T17:37:56 IST" finished-at="2020-03-25T17:38:15 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- geeksURL -->
+        <test-method status="PASS" signature="tutorialspointURL()[pri:3, instance:demo.link_log@528931cf]" name="tutorialspointURL" duration-ms="20403" started-at="2020-03-25T17:38:15 IST" finished-at="2020-03-25T17:38:35 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tutorialspointURL -->
+        <test-method status="PASS" signature="closethebrowser()[pri:4, instance:demo.link_log@528931cf]" name="closethebrowser" duration-ms="2218" started-at="2020-03-25T17:38:35 IST" finished-at="2020-03-25T17:38:37 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closethebrowser -->
+      </class> <!-- demo.link_log -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
