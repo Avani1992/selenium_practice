@@ -1,0 +1,25 @@
+23/03/2020 16:57:45actitime_Login  Opening the Browser
+23/03/2020 16:57:45actitime_Login  -------------------------------------------------------------------------------
+23/03/2020 16:57:49actitime_Login  Entering the URL: https://online.actitime.com/tcs/login.do
+23/03/2020 16:58:00actitime_Login  Entering the Username: patelavani42@gmail.com
+23/03/2020 16:58:01actitime_Login  Entering the Password: manager
+23/03/2020 16:58:02actitime_Login  Clicking the login button
+23/03/2020 16:58:11actitime_Login  Verifying the homepage URL: https://online.actitime.com/tcs/user/submit_tt.do
+23/03/2020 16:58:12actitime_Login  Closing the account
+23/03/2020 16:58:12actitime_Login  Pass
+23/03/2020 16:58:12actitime_Login  ---------------------------------------------------------------------
+23/03/2020 16:58:12actitime_Login  Entering the URL: https://online.actitime.com/tcs1/login.do
+23/03/2020 16:58:19actitime_Login  Entering the Username: kkj28kumanj@gmail.com
+23/03/2020 16:58:20actitime_Login  Entering the Password: manager1
+23/03/2020 16:58:22actitime_Login  Clicking the login button
+23/03/2020 16:58:29actitime_Login  Fail
+23/03/2020 16:58:29actitime_Login  ---------------------------------------------------------------------
+23/03/2020 16:58:29actitime_Login  Entering the URL: https://online.actitime.com/tcs2/login.do
+23/03/2020 16:58:35actitime_Login  Entering the Username: patelruchi0101@gmail.com
+23/03/2020 16:58:37actitime_Login  Entering the Password: manager
+23/03/2020 16:58:38actitime_Login  Clicking the login button
+23/03/2020 16:58:47actitime_Login  Verifying the homepage URL: https://online.actitime.com/tcs2/user/submit_tt.do
+23/03/2020 16:58:49actitime_Login  Closing the account
+23/03/2020 16:58:49actitime_Login  Pass
+23/03/2020 16:58:49actitime_Login  ---------------------------------------------------------------------
+23/03/2020 16:58:49actitime_Login  close the browser
