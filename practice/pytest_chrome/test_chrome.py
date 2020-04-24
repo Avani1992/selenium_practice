@@ -9,11 +9,41 @@ def test_checkGoogle_Url(test_chromedriver):
     driver=test_chromedriver[0]
     driver.get('http://www.google.com')
     time.sleep(3)
+
     driver.close()
 
-def test_current_Url(test_chromedriver):
+def test_checkGoogle_Url(test_chromedriver):
+    logger.info("Open the Firefox browser..")
+    logger.info('--------------------------------------------------------------------------------------')
+    logger.info('test_checkGoogle_Url..............')
+
+    e_url='https://www.google.com/?gws_rd=ssl'
+    logger.info("Enter Google URL...")
+    logger.info('We are redirecting to the Google Webpage...')
+
     driver = test_chromedriver[0]
+    driver.get('http://www.google.com')
+    a_url=driver.current_url
+    logger.info('actual_url')
+    logger.info(a_url)
+    logger.info('expected_url')
+    logger.info(e_url)
+    if(a_url==e_url):
+        logger.info("test_checkGoogle_URL: Passed...")
+    else:
+        logger.info("test_checkGoogle_URL: Failed...")
+    time.sleep(3)
+    driver.close()
+
+
+def test_current_Url(test_chromedriver):
+    logger.info('--------------------------------------------------------------------------------------')
+    logger.info('test_current_Url..............')
+    ex_url='https://online.actitime.com/tcs1/administration/manage_licenses.do'
     logger.info("Enter Actitime URL...")
+    logger.info('enter correct username, password and click on Login Button and check it is redirected to the homepage.')
+
+    driver = test_chromedriver[0]
     driver.get("https://online.actitime.com/tcs1/login.do")
     logger.info("Enter username=kkj28kumanj@gmail.com")
     driver.find_element_by_id('username').send_keys('kkj28kumanj@gmail.com')
@@ -24,26 +54,48 @@ def test_current_Url(test_chromedriver):
     time.sleep(4)
 
     text=driver.current_url
-    logger.info('Current url=',text)
+    logger.info('current_url')
+    logger.info(text)
+    logger.info('expected_url')
+    logger.info(ex_url)
+    if(text==ex_url):
+        logger.info("test_current_Url: Passed..")
+    else:
+        logger.info("test_current_Url: Failed..")
     print(text)
     driver.close()
 
+
 def test_checkbox(test_chromedriver):
+    logger.info('--------------------------------------------------------------------------------------')
+    logger.info('test_checkbox..............')
+    logger.info('Goto the Actitime webpage....')
+    logger.info('click on the checkbox')
+
     driver = test_chromedriver[0]
-    logger.info('Click on the checkbox')
     driver.get("https://online.actitime.com/tcs1/login.do")
     chkbox = driver.find_element_by_id('keepLoggedInCheckBox')
     chkbox.click()
+
     if (chkbox.is_selected()):
-        print("Yes")
+
+            logger.info("test_checkbox: Passed..")
+            print("Yes")
     else:
+        logger.info("test_checkbox: Failed...")
         print("No")
 
     driver.close()
 
 def test_alert_popup(test_chromedriver):
+    logger.info('--------------------------------------------------------------------------------------')
+    logger.info('test_alert_popup..............')
+    logger.info('Enter the GSRTC webpage url....')
+    logger.info('check whether alert popup displayed when we click on search button..')
+    ex_data=" 'From' place is required."
+    print(ex_data)
+
     driver = test_chromedriver[0]
-    logger.info('Enter the GSRTC webpage url..')
     driver.get('https://gsrtc.in/site/')
     logger.info('Click on the search button.')
     driver.find_element_by_xpath("//button[@id='cboxClose']").click()
@@ -55,15 +107,26 @@ def test_alert_popup(test_chromedriver):
 
     time.sleep(2)
     data = alert.text
-    logger.info('Alert msg=',data)
+
     print("Alert msg: ", data)
     alert.accept()
+
+    if(data==ex_data):
+        logger.info("test_alert_popup: Passed..")
+    else:
+        logger.info("test_alert_popup: Failed..")
+
     time.sleep(2)
-    driver.close()
+
 
 def test_multielement(test_chromedriver):
+    logger.info('--------------------------------------------------------------------------------------')
+    logger.info('test_multielement..............')
+    logger.info('enter the Google webpage url..')
+    ex_list=['manual testing','manual','manual scavenging','manual testing interview questions','manual meaning','manual testing jobs','manually','manual testing pdf','manual testing tools'
+]
+
     driver = test_chromedriver[0]
-    logger.info("Enter the Google webpage url")
     driver.get('http://www.google.com')
     logger.info('Enter the manual in google searchtextbox')
     driver.find_element_by_name('q').send_keys('manual')
@@ -71,13 +134,15 @@ def test_multielement(test_chromedriver):
     lists = driver.find_elements_by_xpath("//span[contains(.,'manual')]")  # list of all links which contain manual in it.
 
     size = len(lists)
-
+    ac_list=list()
     for i in range(0, size):
         text = lists[i].text  # retrieve text from list.
         print(text)
-        logger.info(text)
+        ac_list.append(text)
+    if(ac_list==ex_list):
+        logger.info("test_multielement:Passed...")
+    else:
+        logger.info("test_multielement: Failed..")
     driver.close()
+    logger.info('--------------------------------------------------------------------------------------')
     logger.info("Close the browser")
-
-
-

@@ -1,16 +1,40 @@
-2020-04-23 15:32:48,937 test_firefox.py  INFO  Enter Google URL...
-2020-04-23 15:33:00,123 test_firefox.py  INFO  Enter the GSRTC webpage url..
-2020-04-23 15:33:11,901 test_firefox.py  INFO  Click on the search button.
-2020-04-23 15:33:18,243 test_firefox.py  INFO  Enter the Google webpage url
-2020-04-23 15:33:20,821 test_firefox.py  INFO  Enter the manual in google searchtextbox
-2020-04-23 15:33:27,886 test_firefox.py  INFO  manual testing
-2020-04-23 15:33:27,902 test_firefox.py  INFO  manual
-2020-04-23 15:33:27,902 test_firefox.py  INFO  manual scavenging
-2020-04-23 15:33:27,918 test_firefox.py  INFO  manual testing jobs in bangalore
-2020-04-23 15:33:27,918 test_firefox.py  INFO  manual testing interview questions
-2020-04-23 15:33:27,933 test_firefox.py  INFO  manual testing tutorial
-2020-04-23 15:33:27,933 test_firefox.py  INFO  manual meaning
-2020-04-23 15:33:27,949 test_firefox.py  INFO  manual testing jobs
-2020-04-23 15:33:27,949 test_firefox.py  INFO  manually
-2020-04-23 15:33:27,964 test_firefox.py  INFO  manual testing pdf
-2020-04-23 15:33:29,339 test_firefox.py  INFO  Close the browser
+2020-04-24 18:08:32,348 test_firefox.py  INFO  Open the Firefox browser..
+2020-04-24 18:08:32,348 test_firefox.py  INFO  --------------------------------------------------------------------------------------
+2020-04-24 18:08:32,348 test_firefox.py  INFO  test_checkGoogle_Url..............
+2020-04-24 18:08:32,348 test_firefox.py  INFO  Enter Google URL...
+2020-04-24 18:08:32,348 test_firefox.py  INFO  We are redirecting to the Google Webpage...
+2020-04-24 18:08:35,519 test_firefox.py  INFO  actual_url
+2020-04-24 18:08:35,519 test_firefox.py  INFO  https://www.google.com/?gws_rd=ssl
+2020-04-24 18:08:35,519 test_firefox.py  INFO  expected_url
+2020-04-24 18:08:35,519 test_firefox.py  INFO  https://www.google.com/?gws_rd=ssl
+2020-04-24 18:08:35,519 test_firefox.py  INFO  test_checkGoogle_URL: Passed...
+2020-04-24 18:08:38,534 test_firefox.py  INFO  --------------------------------------------------------------------------------------
+2020-04-24 18:08:38,534 test_firefox.py  INFO  test_checkbox..............
+2020-04-24 18:08:38,534 test_firefox.py  INFO  Goto the Actitime webpage....
+2020-04-24 18:08:38,534 test_firefox.py  INFO  click on the checkbox
+2020-04-24 18:08:47,363 test_firefox.py  INFO  test_checkbox: Passed..
+2020-04-24 18:08:47,363 test_firefox.py  INFO  --------------------------------------------------------------------------------------
+2020-04-24 18:08:47,363 test_firefox.py  INFO  test_current_Url..............
+2020-04-24 18:08:47,363 test_firefox.py  INFO  Enter Actitime URL...
+2020-04-24 18:08:47,363 test_firefox.py  INFO  enter correct username, password and click on Login Button and check it is redirected to the homepage.
+2020-04-24 18:08:56,077 test_firefox.py  INFO  Enter username=kkj28kumanj@gmail.com
+2020-04-24 18:08:56,155 test_firefox.py  INFO  Enter password=manager
+2020-04-24 18:08:56,171 test_firefox.py  INFO  click on the Login button.
+2020-04-24 18:09:00,420 test_firefox.py  INFO  current_url
+2020-04-24 18:09:00,420 test_firefox.py  INFO  https://online.actitime.com/tcs1/administration/manage_licenses.do
+2020-04-24 18:09:00,420 test_firefox.py  INFO  expected_url
+2020-04-24 18:09:00,420 test_firefox.py  INFO  https://online.actitime.com/tcs1/administration/manage_licenses.do
+2020-04-24 18:09:00,420 test_firefox.py  INFO  test_current_Url: Passed..
+2020-04-24 18:09:00,420 test_firefox.py  INFO  --------------------------------------------------------------------------------------
+2020-04-24 18:09:00,420 test_firefox.py  INFO  test_alert_popup..............
+2020-04-24 18:09:00,420 test_firefox.py  INFO  Enter the GSRTC webpage url....
+2020-04-24 18:09:00,420 test_firefox.py  INFO  check whether alert popup displayed when we click on search button..
+2020-04-24 18:09:06,504 test_firefox.py  INFO  Click on the search button.
+2020-04-24 18:09:10,850 test_firefox.py  INFO  test_alert_popup: Failed..
+2020-04-24 18:09:12,866 test_firefox.py  INFO  --------------------------------------------------------------------------------------
+2020-04-24 18:09:12,866 test_firefox.py  INFO  test_multielement..............
+2020-04-24 18:09:12,866 test_firefox.py  INFO  enter the Google webpage url..
+2020-04-24 18:09:13,568 test_firefox.py  INFO  Enter the manual in google searchtextbox
+2020-04-24 18:09:20,735 test_firefox.py  INFO  test_multielement: Failed..
+2020-04-24 18:09:22,141 test_firefox.py  INFO  --------------------------------------------------------------------------------------
+2020-04-24 18:09:22,141 test_firefox.py  INFO  Close the browser
